@@ -1,0 +1,10 @@
+global BOX_1_H,BOX_2_W,BG_OFFSET,H,W,X_PPU,Y_PPU
+H=128
+W=512
+Y_PPU=1500/H
+X_PPU=3000/W 
+BOX_1_H=200 #MR X Profile
+BOX_2_W=500 #SF Y Profile
+MR_X_RNG=250
+MR_B_BOX=(500,250)  # width & height
+BG_OFFSET=5

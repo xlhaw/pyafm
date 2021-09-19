@@ -1,0 +1,24 @@
+MDBoxLayout:
+	orientation: 'vertical'
+	MDToolbar:
+		title: "HDI AFM Analyzer"
+	
+	MDBoxLayout:
+		adaptive_height: True
+		MDTextField:
+			id: field
+			hint_text: "Current Directory"
+			helper_text: "Select the Working Directory"
+			helper_text_mode: "on_focus"	
+		MDRoundFlatIconButton:
+			text: "Open"
+			icon: "folder"
+			pos_hint: {'center_x': .5, 'center_y': .6}
+			on_release: app.file_manager_open()
+	
+	MDFloatLayout:
+		MDFillRoundFlatButton:
+			id: 'start'
+			text: "Start Analyze!"
+			pos_hint: {"center_x": .5, "center_y": .5}
+			on_press: app.start_analyze()

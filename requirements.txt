@@ -1,0 +1,6 @@
+Kivy
+seaborn
+matplotlib
+pandas
+numpy
+kivymd
